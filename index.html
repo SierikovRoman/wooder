@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>WOODER</title>
+	
+	<!-- build:css css/vendor.min.css -->
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/dist/css/bootstrap.css">
+	<!-- endbuild -->
+
+	<!-- build:css css/style.min.css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/vendor.min.js -->
+	<script src="assets/jquery/jquery.js"></script>
+	<script src="assets/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="assets/smooth-scroll/dist/js/smooth-scroll.js"></script>	
+    <!-- endbuild -->
+    
+    <!-- build:js js/index.min.js -->
+	<script src="js/index.js"></script>
+	<!-- endbuild -->
+
+</head>
+<body>
+
+    <div class="info_wrapper">
+        <div class="information_block">
+                <button type="button" class="close" aria-label="Close" onclick="closeInfo()">
+                    <span aria-hidden="true"><img src="assets/images/cancel.png" class="close_info"/></span>
+                </button>
+                <img src="assets/images/logo.png" class="info_img"/>
+                <p class="by_a">Designed by <a href="https://www.behance.net/Olianishyn" target="_blank" class="author_a">Vlacheslav Ollanishyn</a></p>
+                <p class="by_a">Made by <a href="https://github.com/SierikovRoman" target="_blank" class="author_a">Roman Sierikov</a></p>
+        </div>
+    </div>
+
+    <div class="menu_slider" id="menu_slider">
+        <button type="button" class="close" aria-label="Close" onclick="closeMenu()">
+            <span aria-hidden="true"><img src="assets/images/cancel.png" class="close_btn"/></span>
+        </button>
+        <div class="container">
+            <ul class="menu_slider_list">
+                <li><img src="assets/images/logo.png" /></li>
+                <li><a data-scroll href="#home" class="menu_link" onclick="closeMenu()">
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span> Home
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span>
+                </a></li>
+                <li><a data-scroll href="#products" class="menu_link" onclick="closeMenu()">
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span> Products
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span>
+                </a></li>
+                <li><a data-scroll href="#about" class="menu_link" onclick="closeMenu()">
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span> About
+                    <span><img src="assets/images/furniture_line.png" class="menu_line"/></span>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <div class="col-2 col-md-2 menu">
+            <button type="button" class="menu_btn" onclick="showMenu()">
+                <img src="assets/images/menu.png" id="menu_img" />
+                <span id="menu" onclick="showMenu()">Menu</span>
+            </button>
+        </div>
+        <div class="col-8 col-md-8 navig">
+            <a href="#" id="logo_md">
+                <img src="assets/images/logo.png" />
+            </a>
+            <ul class="menu_list">
+                <li class="im">
+                    <a href="#" id="logo">
+                        <img src="assets/images/logo.png" />
+                    </a>
+                </li>
+                <li><a data-scroll href="#home" class="link">Home</a></li>
+                <li><a data-scroll href="#products" class="link">Products</a></li>
+                <li><a data-scroll href="#about" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="col-2 col-md-2 lang">
+            <button type="button" class="info_btn" onclick="showInfo()">
+                <img src="assets/images/info.png" id="info" />
+            </button>
+        </div>
+    </div>
+
+    <section class="anchor_block">
+        <p class="number_01">
+            <span><img src="assets/images/line_01.png" id="line_01"/></span>&nbsp
+            01
+        </p>
+        <ul class="anchor_list">
+            <li><a data-scroll href="#home"><img src="assets/images/circle.png" class="circle"/></a></li>
+            <li><a data-scroll href="#products"><img src="assets/images/circle.png" class="circle"/></a></li>
+            <li><a data-scroll href="#video"><img src="assets/images/circle.png" class="circle"/></a></li>
+            <li><a data-scroll href="#about"><img src="assets/images/circle.png" class="circle"/></a></li>
+        </ul>
+    </section>
+
+    <section class="logo_block">
+        <p class="wooder">WOODER</p>
+        <button type="button" class="learn_btn">Learn more <span id="arrow_1"><img src="assets/images/arrow_1.png" /></span></button>
+    </section>
+
+
+    <section class="first__section" id="home">
+        <div class="left_block">
+            <div class="img-overlay"></div>
+        </div>
+        <div class="right_block">
+            <div class="img-overlay">
+                <a href="#">
+                    <img src="assets/images/share.png" class="share"/>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="line_block">
+        <div class="cont">
+            <img src="assets/images/line_string.png" class="line_f"/>
+        </div>
+    </section>
+
+    <section class="second__section" id="products">
+        <div class="container_sec">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="title">
+                        <span>
+                            <img src="assets/images/furniture_line.png" class="hide_line">
+                        </span>
+                        furniture</p>
+                    <p class="desc">
+                        <!-- <span>
+                            <img src="assets/images/desc_line.png">
+                        </span> -->
+                        Wooder utilizes materials otherwise left behind,
+                        rendered useless in their original intent. By crea-
+                        ting new pieces made of reclaimed barnwood
+                    </p>
+                    <a href="#learn_more" class="learn_link">learn more <img src="assets/images/small_arrow.png"></a>
+                    <p class="number_list">01.</p>
+                </div>
+                <div class="col-12 col-md-6" style="display:block;overflow:hidden;padding:0;text-align:center;">
+                    <img src="assets/images/img_01(1).png" class="furniture_img"/>
+                </div>                
+            </div>
+
+            <div class="line_block_s">
+                <div class="container">
+                        <img src="assets/images/line_string.png" class="line_s"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-6" style="display:block;overflow:hidden;padding:0;text-align:center;">
+                    <img src="assets/images/img_02.png" class="furniture_img"/>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="title_s">
+                            decor&nbsp
+                        <span>
+                            <img src="assets/images/furniture_line.png" class="hide_line">
+                        </span>
+                        </p>
+                    <p class="desc_s">
+                        <!-- <span>
+                            <img src="assets/images/desc_line.png">
+                        </span> -->
+                        We make all types of wooden decor as per design given by Architect,
+                        Interior designer, contractor which is suitable
+                    </p>
+                    <p class="learn_link_s">
+                        <a href="#learn_more" >learn more <img src="assets/images/small_arrow.png"></a>
+                    </p>
+                    <p class="learn_line_s">
+                        <img src="assets/images/learn_line.png">
+                    </p>
+                    <p class="number_list_s">02.</p>
+                </div>                
+            </div>
+            <div class="line_block_t">
+                <div class="container">
+                        <img src="assets/images/line_string.png" class="line_s"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third__section" id="third">
+        <div class="container">
+            <p class="quality">wooder – is quality</p>
+            <img src="assets/images/desc_line.png" class="q_img"/>
+            <p class="quality_desc">We create unique design objects made of rare wood, specially under the order. </br>
+                Look at the short video about our work.
+            </p>
+        <div class="row" style="padding:0 45px;">
+            <div class="col-12 col-md-4">
+                <div class="video_div" id="vd_1">
+                    <a href="#" class="vd">
+                        <div class="play_me">
+                            <img src="assets/images/play.png" />
+                        </div>
+                    </a>
+                </div>
+                <img src="assets/images/solid_line.png" class="s_line"/>
+                <p class="v_desc">Innovative Design</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="video_div" id="vd_2">
+                    <a href="#" class="vd">
+                        <div class="play_me">
+                            <img src="assets/images/play.png" />
+                        </div>
+                    </a>
+                </div>
+                <img src="assets/images/solid_line.png" class="s_line"/>
+                <p class="v_desc">High-level Skills</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="video_div" id="vd_3">
+                    <a href="#" class="vd">
+                        <div class="play_me">
+                            <img src="assets/images/play.png" />
+                        </div>
+                    </a>
+                </div>
+                <img src="assets/images/solid_line.png" class="s_line"/>
+                <p class="v_desc">Quality Products</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="fourth__section" id="video">
+        <div class="borderok"></div>
+        <div class="design_block">
+            <p class="title_design">
+                    <!-- <span>
+                        <img src="assets/images/furniture_line.png">
+                    </span> -->
+                    we Do the design </br>
+                    of any complexity</p>
+                <p class="desc_design">
+                    <!-- <span>
+                        <img src="assets/images/desc_line.png">
+                    </span> -->
+                    This is a team of professionals that make the furniture and 
+                    wood décor high standard. Creating modern designs. 
+                    Adhering to the global quality standards. And we are 
+                    doing work with love.
+                </p>
+                <button type="button" class="watch_btn"><span id="player_1"><img src="assets/images/play_3.png" /></span>&nbsp watch video</button>
+        </div>
+        <div class="img-overlay"></div>
+    </section>
+
+    <section class="fifth__section" id="about">
+        <div class="container about">
+            <div class="row">
+                <div class="col-12 col-md-6" style="padding:0; overflow: hidden;">
+                        <img src="assets/images/mans.png">
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="title_t">
+                            <!-- <span>
+                                <img src="assets/images/furniture_line.png">
+                            </span> -->
+                            about us
+                            </p>
+                        <p class="desc_t">
+                            <!-- <span>
+                                <img src="assets/images/desc_line.png">
+                            </span> -->
+                            We are a team of professionals in the wood processing and the creation of 
+                            wooden furniture of the highest class
+                        </p>
+                        <a href="#learn_more" class="learn_link_t">learn more <img src="assets/images/small_arrow.png"></a>
+                        <p>
+                        <img src="assets/images/learn_line.png" class="learn_line_t">
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footerok">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <p class="copyright">© 2016 wooder</p>
+                </div>
+                <div class="col-12 col-md-4 logo_type">
+                    <a href="#">
+                        <img src="assets/images/logo.png" />
+                    </a>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p class="by">Designed by <a href="https://www.behance.net/Olianishyn" target="_blank" class="author">Vlacheslav Ollanishyn</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="img-overlay"></div>
+    </footer>
+
+</body>
+</html>
